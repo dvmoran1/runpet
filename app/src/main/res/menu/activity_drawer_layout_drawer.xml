@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_pets"
+            android:icon="@drawable/ic_pets"
+            android:title="@string/menu_mascotas" />
+        <item
+            android:id="@+id/nav_paseo"
+            android:icon="@drawable/ic_ride"
+            android:title="@string/menu_pasea" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_maps"
+            android:title="@string/menu_request" />
+    </group>
+
+    <item android:title="Perfil">
+        <menu>
+            <item
+                android:id="@+id/nav_cuenta"
+                android:icon="@drawable/ic_profile"
+                android:title="@string/menu_cuenta" />
+            <item
+                android:id="@+id/nav_cierra"
+                android:icon="@drawable/ic_close"
+                android:title="@string/menu_cerrar" />
+        </menu>
+    </item>
+</menu>

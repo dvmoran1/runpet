@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4285EF">
+
+    <EditText
+        android:id="@+id/nomUsu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/inputNombre"
+        android:drawableStart="@drawable/user"
+        android:inputType="text"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/mailUsu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/nomUsu"
+        android:ems="11"
+        android:hint="@string/inputMail"
+        android:drawableStart="@drawable/user"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/userRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/mailUsu"
+        android:drawableStart="@drawable/user"
+        android:ems="11"
+        android:hint="@string/inputUsuario"
+        android:inputType="text"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/passRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/userRegister"
+        android:paddingTop="25dp"
+        android:ems="11"
+        android:text="@string/inputContraseña"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock"
+        android:textColor="@android:color/darker_gray" />
+    <CheckBox
+        android:id="@+id/checkTipo"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_below="@+id/passRegister"
+        android:text="@string/checkText"
+        android:layout_marginStart="100dp" />
+    <Button
+        android:id="@+id/btnRegistra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/checkTipo"
+        android:text="@string/btn_registro"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

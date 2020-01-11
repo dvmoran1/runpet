@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4285EF">
+
+    <EditText
+        android:id="@+id/userText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="125dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/user"
+        android:hint="Correo"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/passText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/userText"
+        android:layout_centerInParent="true"
+        android:background="#11000000"
+        android:drawableStart="@drawable/lock"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/passText"
+        android:layout_marginTop="150dp"
+        android:text="@string/login"
+        android:textColor="#FFFF"
+        android:textSize="25sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="#A0A0F0"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSingUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnSession"
+        android:text="@string/registrate"
+        android:textColor="#FFFF"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="#A0A0F0"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

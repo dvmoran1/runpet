@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4285EF">
+
+    <TextView
+        android:id="@+id/viewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="391dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/viewNombre"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:id="@+id/viewUsuario"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editUsuario"
+        android:layout_marginStart="15dp"
+        android:layout_width="391dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:layout_below="@+id/viewUsuario"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/viewCorreo"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUsuario"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Correo:"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editCorreo"
+        android:layout_below="@+id/viewCorreo"
+        android:layout_width="391dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginStart="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textDireccion"
+        android:layout_below="@+id/editCorreo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:layout_marginStart="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editDireccion"
+        android:layout_below="@+id/textDireccion"
+        android:layout_width="391dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginStart="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/viewTelefono"
+        android:layout_below="@+id/editDireccion"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono:"
+        android:layout_marginStart="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTelefono"
+        android:layout_below="@+id/viewTelefono"
+        android:layout_width="391dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginStart="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_below="@+id/editTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"/>
+</RelativeLayout>
